@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download | Better Mouse Without Borders</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #37352f;
+        }
+        .notion-shadow {
+            box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px, rgba(15, 15, 15, 0.1) 0px 2px 4px;
+        }
+        pre {
+            background-color: #f7f6f3;
+            border-radius: 6px;
+            padding: 1rem;
+            font-size: 0.875rem;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body class="bg-[#ffffff]">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="landing.html" class="flex items-center space-x-2">
+                <div class="w-8 h-8 bg-black rounded-md flex items-center justify-center">
+                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"></path>
+                    </svg>
+                </div>
+                <span class="font-bold text-lg tracking-tight">Better Mouse Without Borders</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="landing.html#features" class="hover:text-black transition-colors">Features</a>
+                <a href="landing.html#how-it-works" class="hover:text-black transition-colors">How it Works</a>
+                <a href="landing.html" class="text-gray-500 hover:text-black transition-colors">Back to Home</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="max-w-3xl mx-auto px-6 pt-20 pb-12">
+        <h1 class="text-4xl font-bold tracking-tight mb-4">Download</h1>
+        <p class="text-xl text-gray-500">
+            Get the latest version of Better Mouse Without Borders for Windows.
+        </p>
+    </section>
+
+    <!-- Download Cards -->
+    <section class="max-w-3xl mx-auto px-6 pb-20">
+        <div class="grid md:grid-cols-2 gap-6 mb-16">
+            <div class="p-8 rounded-xl border border-gray-200 bg-white hover:border-black transition-all group">
+                <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-black group-hover:text-white transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Receiver</h3>
+                <p class="text-gray-500 text-sm mb-6">Install this on the PC you want to control. (The destination)</p>
+                <button class="w-full py-2 bg-black text-white rounded-md font-medium hover:bg-gray-800 transition-colors">Download .exe</button>
+            </div>
+            <div class="p-8 rounded-xl border border-gray-200 bg-white hover:border-black transition-all group">
+                <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-black group-hover:text-white transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Sender</h3>
+                <p class="text-gray-500 text-sm mb-6">Install this on the laptop you're typing on. (The source)</p>
+                <button class="w-full py-2 bg-black text-white rounded-md font-medium hover:bg-gray-800 transition-colors">Download .exe</button>
+            </div>
+        </div>
+
+        <!-- Quick Start -->
+        <div class="border-t border-gray-100 pt-16">
+            <h2 class="text-2xl font-bold mb-8">Quick Start Guide</h2>
+            <div class="space-y-12">
+                <div class="space-y-4">
+                    <h3 class="text-lg font-bold flex items-center">
+                        <span class="w-6 h-6 rounded-full bg-gray-100 flex items-center justify-center text-xs mr-3">1</span>
+                        Prerequisites
+                    </h3>
+                    <p class="text-gray-600 pl-9">
+                        Ensure you have the <a href="https://dotnet.microsoft.com/download/dotnet/8.0" class="text-blue-600 hover:underline">.NET 8 SDK</a> installed on both machines.
+                    </p>
+                </div>
+
+                <div class="space-y-4">
+                    <h3 class="text-lg font-bold flex items-center">
+                        <span class="w-6 h-6 rounded-full bg-gray-100 flex items-center justify-center text-xs mr-3">2</span>
+                        Setup the Receiver (PC)
+                    </h3>
+                    <p class="text-gray-600 pl-9 mb-4">
+                        Run the receiver with a pre-shared key (PSK). This key will be used to sign all input messages.
+                    </p>
+                    <div class="pl-9">
+                        <pre>dotnet run --project src/Receiver -- --psk your_secret_key</pre>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <h3 class="text-lg font-bold flex items-center">
+                        <span class="w-6 h-6 rounded-full bg-gray-100 flex items-center justify-center text-xs mr-3">3</span>
+                        Setup the Sender (Laptop)
+                    </h3>
+                    <p class="text-gray-600 pl-9 mb-4">
+                        Run the sender with the same key and the IP address of your Receiver PC.
+                    </p>
+                    <div class="pl-9">
+                        <pre>dotnet run --project src/Sender -- --psk your_secret_key --receiver 192.168.1.50</pre>
+                    </div>
+                </div>
+
+                <div class="bg-blue-50 border border-blue-100 p-6 rounded-lg ml-9">
+                    <h4 class="font-bold text-blue-800 mb-2 flex items-center">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        Tip: Mode Toggling
+                    </h4>
+                    <p class="text-blue-700 text-sm">
+                        Use <strong>Ctrl + Alt + F12</strong> to toggle between "Locked" mode (PC control) and "Local" mode (Laptop control).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-100 py-12">
+        <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 text-gray-400 text-sm">
+            <div class="flex items-center space-x-2 text-black">
+                <div class="w-6 h-6 bg-black rounded flex items-center justify-center">
+                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"></path></svg>
+                </div>
+                <span class="font-bold">Better MWB</span>
+            </div>
+            <div>&copy; 2026 Better Mouse Without Borders.</div>
+            <div class="flex space-x-6">
+                <a href="landing.html" class="hover:text-black transition-colors">Home</a>
+                <a href="https://github.com" class="hover:text-black transition-colors">GitHub</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
